@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[english]{babel}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{ragged2e} % For text alignment
+
+\begin{document}
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=\linewidth]{logo.jpg} % Repl>
+    \end{minipage}
+    \begin{minipage}{0.55\textwidth}
+        \flushright % Aligns text to the right
+        \textbf{Name:N.Bhanu Thahera} \\[5pt]
+         \textbf{ID:COMETfwc005} \\
+          \textbf{Date:27-03-2025} \\
+    \end{minipage}
+\end{figure}
+
+
+\begin{center}
+\textbf\large{GATE \\ EE2010}
+\end{center}
+
+
+
+\begin{enumerate}
+\item{\bfseries Q)}
+ Which of the following circuits is a realization of the function.\[
+F = \overline{X} \overline{Y} + YZ
+\]
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[width=\columnwidth]{Img.jpg}
+\end{figure}
+
+{\bfseries Answer:}
+(A)circuit Analysis\\
+\begin{enumerate}
+\item The first NAND gate takes inputs X as x' and another AND gate takes x,x' and gives as \(\overline{x}\) .\\
+
+\item The second AND gate takes inputs y,z = yz.\\
+
+\item The output F is obtained by AND-ing the outputs of both AND gates.\\
+
+\item Boolean Expression for (A):\\
+\[
+F = \overline{x}yz
+\]
+\end{enumerate}
+(B)circuit Analysis\\
+\begin{enumerate}
+\item The first AND gate takes inputs X as x .
+
+\item The second AND gate takes inputs y,z = yz.
+
+\item The output F is obtained by OR-ing the outputs of both AND gates.
+
+Boolean Expression for (A):
+\(
+F =X+YZ
+\)\\
+\end{enumerate}
+(C)circuit Analysis\\
+\begin{enumerate}
+\item The first NAND gate takes inputs X as x' and another AND gate takes x,x' and gives as\(\overline{x}.\)
+
+\item The second NAND gate takes inputs y,z = \(\overline{y}\overline{z}.\)
+
+\item The output F is obtained by AND-ing the outputs of both AND gates.
+
+\item Boolean Expression for (A):\\
+\[
+F = \overline{x}yz
+\]
+\end{enumerate}
+(D)circuit Analysis\\
+\begin{enumerate}
+\item The first NAND gate takes input X as x' and another NAND gate takes input y as y'  and both inputs are given to NAND gate and gives \(\overline{x}\overline{y}.\)
+
+\item The y input and z input is taken by AND gate and gives  yz.
+
+\item The output F is obtained by OR-ing the outputs of both AND gates.
+
+Boolean Expression for (A):\\
+\[
+F = \overline{x}\overline{y}+yz
+\]
+\end{enumerate}
+
+Therefore option D is correct.
+\end{enumerate}
+
+\end{document}
